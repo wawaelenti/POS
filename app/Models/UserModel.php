@@ -9,12 +9,8 @@ class UserModel extends Model
 {
     use HasFactory;
 
-    protected $table = 'm_user'; //mendefinisikan nama tabel yang digunakan oleh model ini
-    protected $primarykey = 'user_id'; //mendefinisikan primary key dari tabel yang digunakan
-    /** 
-     * The attributes that are mass assignable
-     * 
-     * @var array
-    */
-    protected $fillable = ['level_id','username','nama'];
+    protected $table = 'm_user';
+    protected $primaryKey = 'user_id';
+
+    protected $fillable = ['level_id','username','nama','password'];
 }
